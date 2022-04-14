@@ -1,0 +1,431 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Tue May 02 12:29:09 2017
+# Process ID: 6968
+# Current directory: D:/VivdoProjects/SineWave
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8108 D:\VivdoProjects\SineWave\SineWave.xpr
+# Log file: D:/VivdoProjects/SineWave/vivado.log
+# Journal file: D:/VivdoProjects/SineWave\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/VivdoProjects/SineWave/SineWave.xpr
+launch_simulation
+open_wave_config D:/VivdoProjects/SineWave/sinewaves_behav.wcfg
+source ThreePhase_SCRs_Controller.tcl
+add_force {/ThreePhase_SCRs_Controller/clock} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/ThreePhase_SCRs_Controller/rset} -radix hex {1 0ns} -cancel_after 300ns
+run all
+run all
+add_bp {D:/VivdoProjects/SineWave/Sinewaves.vhd} 281
+run all
+close_sim
+reset_run synth_1
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+launch_simulation
+open_wave_config D:/VivdoProjects/SineWave/sinewaves_behav.wcfg
+source ThreePhase_SCRs_Controller.tcl
+add_force {/ThreePhase_SCRs_Controller/clock} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/ThreePhase_SCRs_Controller/rset} -radix hex {1 0ns} -cancel_after 300ns
+run all
+remove_forces { {/ThreePhase_SCRs_Controller/PhaseCounter1} }
+restart
+run all
+add_bp {D:/VivdoProjects/SineWave/Sinewaves.vhd} 279
+run all
+run all
+close_sim
+launch_simulation
+open_wave_config D:/VivdoProjects/SineWave/sinewaves_behav.wcfg
+source ThreePhase_SCRs_Controller.tcl
+add_force {/ThreePhase_SCRs_Controller/clock} -radix hex {1 0ns} {0 5000ps} -repeat_every 10000ps
+add_force {/ThreePhase_SCRs_Controller/rset} -radix hex {1 0ns} -cancel_after 100ns
+run all
+close_sim
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+open_run synth_1 -name synth_1
+set_property mark_debug true [get_nets [list {index1[0]} {index1[1]} {index1[2]} {index1[3]} {index1[4]} {index1[5]} {index1[6]} {index1[7]} {index1[8]}]]
+set_property mark_debug true [get_nets [list {index3[0]} {index3[1]} {index3[2]} {index3[3]} {index3[4]} {index3[5]} {index3[6]} {index3[7]} {index3[8]}]]
+set_property mark_debug true [get_nets [list {index2[0]} {index2[1]} {index2[2]} {index2[3]} {index2[4]} {index2[5]} {index2[6]} {index2[7]} {index2[8]}]]
+set_property mark_debug true [get_nets [list {Sine1_out[2]} {Sine1_out[0]} {Sine1_out[1]} {Sine1_out[3]} {Sine1_out[4]} {Sine1_out[5]} {Sine1_out[6]} {Sine1_out[7]} {Sine1_out[8]} {Sine1_out[9]} {Sine1_out[10]} {Sine1_out[11]}]]
+set_property mark_debug true [get_nets [list {Sine2_out[6]} {Sine2_out[0]} {Sine2_out[1]} {Sine2_out[2]} {Sine2_out[3]} {Sine2_out[4]} {Sine2_out[5]} {Sine2_out[7]} {Sine2_out[8]} {Sine2_out[9]} {Sine2_out[10]} {Sine2_out[11]}]]
+set_property mark_debug true [get_nets [list {Sine3_out[0]} {Sine3_out[1]} {Sine3_out[2]} {Sine3_out[11]} {Sine3_out[3]} {Sine3_out[4]} {Sine3_out[5]} {Sine3_out[6]} {Sine3_out[7]} {Sine3_out[8]} {Sine3_out[9]} {Sine3_out[10]}]]
+set_property mark_debug true [get_nets [list {phase_counter_reg[5]} {phase_counter_reg[0]} {phase_counter_reg[1]} {phase_counter_reg[2]} {phase_counter_reg[3]} {phase_counter_reg[4]} {phase_counter_reg[6]} {phase_counter_reg[7]} {phase_counter_reg[12]} {phase_counter_reg[8]} {phase_counter_reg[9]} {phase_counter_reg[10]} {phase_counter_reg[11]}]]
+set_property mark_debug true [get_nets [list Sinewave1_CrossUp]]
+set_property mark_debug true [get_nets [list Sinewave2_CrossUp]]
+set_property mark_debug true [get_nets [list Sinewave3_CrossUp]]
+set_property mark_debug true [get_nets [list Sinewave2_CrossDwn0]]
+set_property mark_debug true [get_nets [list Sinewave3_CrossDwn0]]
+set_property mark_debug true [get_nets [list Sinewave1_CrossDwn0]]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list {index1_reg_rep[8]_i_3_n_0} ]]
+set_property port_width 12 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {Sine1_out[0]} {Sine1_out[1]} {Sine1_out[2]} {Sine1_out[3]} {Sine1_out[4]} {Sine1_out[5]} {Sine1_out[6]} {Sine1_out[7]} {Sine1_out[8]} {Sine1_out[9]} {Sine1_out[10]} {Sine1_out[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {Sine2_out[0]} {Sine2_out[1]} {Sine2_out[2]} {Sine2_out[3]} {Sine2_out[4]} {Sine2_out[5]} {Sine2_out[6]} {Sine2_out[7]} {Sine2_out[8]} {Sine2_out[9]} {Sine2_out[10]} {Sine2_out[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {Sine3_out[0]} {Sine3_out[1]} {Sine3_out[2]} {Sine3_out[3]} {Sine3_out[4]} {Sine3_out[5]} {Sine3_out[6]} {Sine3_out[7]} {Sine3_out[8]} {Sine3_out[9]} {Sine3_out[10]} {Sine3_out[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 9 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {index1[0]} {index1[1]} {index1[2]} {index1[3]} {index1[4]} {index1[5]} {index1[6]} {index1[7]} {index1[8]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 9 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {index2[0]} {index2[1]} {index2[2]} {index2[3]} {index2[4]} {index2[5]} {index2[6]} {index2[7]} {index2[8]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 9 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {index3[0]} {index3[1]} {index3[2]} {index3[3]} {index3[4]} {index3[5]} {index3[6]} {index3[7]} {index3[8]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 13 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {phase_counter_reg[0]} {phase_counter_reg[1]} {phase_counter_reg[2]} {phase_counter_reg[3]} {phase_counter_reg[4]} {phase_counter_reg[5]} {phase_counter_reg[6]} {phase_counter_reg[7]} {phase_counter_reg[8]} {phase_counter_reg[9]} {phase_counter_reg[10]} {phase_counter_reg[11]} {phase_counter_reg[12]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list Sinewave1_CrossDwn0 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list Sinewave1_CrossUp ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list Sinewave2_CrossDwn0 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list Sinewave2_CrossUp ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list Sinewave3_CrossDwn0 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list Sinewave3_CrossUp ]]
+save_constraints
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+open_hw
+disconnect_hw_server localhost:3121
+connect_hw_server -url localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210248780828]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210248780828]
+open_hw_target
+set_property PROGRAM.FILE {D:/VivdoProjects/SineWave/SineWave.runs/impl_2/ThreePhase_SCRs_Controller.bit} [lindex [get_hw_devices xc7z020_1] 0]
+current_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {D:/VivdoProjects/SineWave/SineWave.runs/impl_2/ThreePhase_SCRs_Controller.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list {index1_reg_rep[8]_i_3_n_0} ]]
+set_property port_width 12 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {Sine1_out[0]} {Sine1_out[1]} {Sine1_out[2]} {Sine1_out[3]} {Sine1_out[4]} {Sine1_out[5]} {Sine1_out[6]} {Sine1_out[7]} {Sine1_out[8]} {Sine1_out[9]} {Sine1_out[10]} {Sine1_out[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {Sine2_out[0]} {Sine2_out[1]} {Sine2_out[2]} {Sine2_out[3]} {Sine2_out[4]} {Sine2_out[5]} {Sine2_out[6]} {Sine2_out[7]} {Sine2_out[8]} {Sine2_out[9]} {Sine2_out[10]} {Sine2_out[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {Sine3_out[0]} {Sine3_out[1]} {Sine3_out[2]} {Sine3_out[3]} {Sine3_out[4]} {Sine3_out[5]} {Sine3_out[6]} {Sine3_out[7]} {Sine3_out[8]} {Sine3_out[9]} {Sine3_out[10]} {Sine3_out[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 9 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {index1[0]} {index1[1]} {index1[2]} {index1[3]} {index1[4]} {index1[5]} {index1[6]} {index1[7]} {index1[8]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 9 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {index2[0]} {index2[1]} {index2[2]} {index2[3]} {index2[4]} {index2[5]} {index2[6]} {index2[7]} {index2[8]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 9 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {index3[0]} {index3[1]} {index3[2]} {index3[3]} {index3[4]} {index3[5]} {index3[6]} {index3[7]} {index3[8]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 13 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {phase_counter_reg[0]} {phase_counter_reg[1]} {phase_counter_reg[2]} {phase_counter_reg[3]} {phase_counter_reg[4]} {phase_counter_reg[5]} {phase_counter_reg[6]} {phase_counter_reg[7]} {phase_counter_reg[8]} {phase_counter_reg[9]} {phase_counter_reg[10]} {phase_counter_reg[11]} {phase_counter_reg[12]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list Sinewave1_CrossDwn0 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list Sinewave1_CrossUp ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list Sinewave2_CrossDwn0 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list Sinewave2_CrossUp ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list Sinewave3_CrossDwn0 ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list Sinewave3_CrossUp ]]
+refresh_design
+set_property mark_debug true [get_nets [list {index1[0]} {index1[1]} {index1[2]} {index1[3]} {index1[4]} {index1[5]} {index1[6]} {index1[7]} {index1[8]}]]
+set_property mark_debug true [get_nets [list {index2[0]} {index2[1]} {index2[2]} {index2[3]} {index2[4]} {index2[5]} {index2[6]} {index2[7]} {index2[8]}]]
+set_property mark_debug true [get_nets [list {index3[0]} {index3[1]} {index3[2]} {index3[3]} {index3[4]} {index3[5]} {index3[6]} {index3[7]} {index3[8]}]]
+set_property mark_debug true [get_nets [list {Sine1_out[0]} {Sine1_out[1]} {Sine1_out[2]} {Sine1_out[3]} {Sine1_out[4]} {Sine1_out[5]} {Sine1_out[6]} {Sine1_out[7]} {Sine1_out[8]} {Sine1_out[9]} {Sine1_out[10]} {Sine1_out[11]}]]
+set_property mark_debug true [get_nets [list {Sine1_out_dly[1]} {Sine1_out_dly[0]} {Sine1_out_dly[2]} {Sine1_out_dly[3]} {Sine1_out_dly[4]} {Sine1_out_dly[5]} {Sine1_out_dly[6]} {Sine1_out_dly[7]} {Sine1_out_dly[8]} {Sine1_out_dly[9]} {Sine1_out_dly[10]} {Sine1_out_dly[11]}]]
+set_property mark_debug true [get_nets [list {Sine2_out[4]} {Sine2_out[0]} {Sine2_out[1]} {Sine2_out[2]} {Sine2_out[3]} {Sine2_out[5]} {Sine2_out[6]} {Sine2_out[7]} {Sine2_out[8]} {Sine2_out[9]} {Sine2_out[10]} {Sine2_out[11]}]]
+set_property mark_debug true [get_nets [list {Sine2_out_dly[1]} {Sine2_out_dly[0]} {Sine2_out_dly[2]} {Sine2_out_dly[3]} {Sine2_out_dly[4]} {Sine2_out_dly[5]} {Sine2_out_dly[6]} {Sine2_out_dly[7]} {Sine2_out_dly[8]} {Sine2_out_dly[9]} {Sine2_out_dly[10]} {Sine2_out_dly[11]}]]
+set_property mark_debug true [get_nets [list {Sine3_out[7]} {Sine3_out[0]} {Sine3_out[1]} {Sine3_out[2]} {Sine3_out[3]} {Sine3_out[4]} {Sine3_out[5]} {Sine3_out[6]} {Sine3_out[11]} {Sine3_out[8]} {Sine3_out[9]} {Sine3_out[10]}]]
+set_property mark_debug true [get_nets [list {Sine3_out_dly[0]} {Sine3_out_dly[1]} {Sine3_out_dly[2]} {Sine3_out_dly[3]} {Sine3_out_dly[4]} {Sine3_out_dly[5]} {Sine3_out_dly[6]} {Sine3_out_dly[7]} {Sine3_out_dly[8]} {Sine3_out_dly[9]} {Sine3_out_dly[10]} {Sine3_out_dly[11]}]]
+set_property mark_debug true [get_nets [list clock_IBUF]]
+set_property mark_debug true [get_nets [list clock_IBUF_BUFG]]
+set_property mark_debug true [get_nets [list phase_counter0]]
+set_property mark_debug true [get_nets [list rset_IBUF]]
+set_property mark_debug true [get_nets [list Sinewave1_CrossDwn1]]
+set_property mark_debug true [get_nets [list Sinewave1_CrossUp]]
+set_property mark_debug true [get_nets [list Sinewave2_CrossUp]]
+set_property mark_debug true [get_nets [list Sinewave2_CrossDwn1]]
+set_property mark_debug true [get_nets [list Sinewave3_CrossDwn1]]
+set_property mark_debug true [get_nets [list Sinewave3_CrossUp]]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 4096 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_0 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_0 ]
+endgroup
+create_debug_core u_ila_1 ila
+set_property C_DATA_DEPTH 4096 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+startgroup 
+set_property C_EN_STRG_QUAL true [get_debug_cores u_ila_1 ]
+set_property C_ADV_TRIGGER true [get_debug_cores u_ila_1 ]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1 ]
+set_property ALL_PROBE_SAME_MU_CNT 4 [get_debug_cores u_ila_1 ]
+endgroup
+set_property port_width 1 [get_debug_ports u_ila_0/clk]
+connect_debug_port u_ila_0/clk [get_nets [list clock_IBUF_BUFG ]]
+set_property port_width 1 [get_debug_ports u_ila_1/clk]
+connect_debug_port u_ila_1/clk [get_nets [list {index1_reg_rep[8]_i_3_n_0} ]]
+set_property port_width 1 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list clock_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list clock_IBUF_BUFG ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list rset_IBUF ]]
+set_property port_width 12 [get_debug_ports u_ila_1/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list {Sine1_out[0]} {Sine1_out[1]} {Sine1_out[2]} {Sine1_out[3]} {Sine1_out[4]} {Sine1_out[5]} {Sine1_out[6]} {Sine1_out[7]} {Sine1_out[8]} {Sine1_out[9]} {Sine1_out[10]} {Sine1_out[11]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 12 [get_debug_ports u_ila_1/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe1]
+connect_debug_port u_ila_1/probe1 [get_nets [list {Sine1_out_dly[0]} {Sine1_out_dly[1]} {Sine1_out_dly[2]} {Sine1_out_dly[3]} {Sine1_out_dly[4]} {Sine1_out_dly[5]} {Sine1_out_dly[6]} {Sine1_out_dly[7]} {Sine1_out_dly[8]} {Sine1_out_dly[9]} {Sine1_out_dly[10]} {Sine1_out_dly[11]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 12 [get_debug_ports u_ila_1/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe2]
+connect_debug_port u_ila_1/probe2 [get_nets [list {Sine2_out[0]} {Sine2_out[1]} {Sine2_out[2]} {Sine2_out[3]} {Sine2_out[4]} {Sine2_out[5]} {Sine2_out[6]} {Sine2_out[7]} {Sine2_out[8]} {Sine2_out[9]} {Sine2_out[10]} {Sine2_out[11]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 12 [get_debug_ports u_ila_1/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe3]
+connect_debug_port u_ila_1/probe3 [get_nets [list {Sine3_out_dly[0]} {Sine3_out_dly[1]} {Sine3_out_dly[2]} {Sine3_out_dly[3]} {Sine3_out_dly[4]} {Sine3_out_dly[5]} {Sine3_out_dly[6]} {Sine3_out_dly[7]} {Sine3_out_dly[8]} {Sine3_out_dly[9]} {Sine3_out_dly[10]} {Sine3_out_dly[11]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 12 [get_debug_ports u_ila_1/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe4]
+connect_debug_port u_ila_1/probe4 [get_nets [list {Sine2_out_dly[0]} {Sine2_out_dly[1]} {Sine2_out_dly[2]} {Sine2_out_dly[3]} {Sine2_out_dly[4]} {Sine2_out_dly[5]} {Sine2_out_dly[6]} {Sine2_out_dly[7]} {Sine2_out_dly[8]} {Sine2_out_dly[9]} {Sine2_out_dly[10]} {Sine2_out_dly[11]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 12 [get_debug_ports u_ila_1/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe5]
+connect_debug_port u_ila_1/probe5 [get_nets [list {Sine3_out[0]} {Sine3_out[1]} {Sine3_out[2]} {Sine3_out[3]} {Sine3_out[4]} {Sine3_out[5]} {Sine3_out[6]} {Sine3_out[7]} {Sine3_out[8]} {Sine3_out[9]} {Sine3_out[10]} {Sine3_out[11]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 9 [get_debug_ports u_ila_1/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe6]
+connect_debug_port u_ila_1/probe6 [get_nets [list {index1[0]} {index1[1]} {index1[2]} {index1[3]} {index1[4]} {index1[5]} {index1[6]} {index1[7]} {index1[8]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 9 [get_debug_ports u_ila_1/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe7]
+connect_debug_port u_ila_1/probe7 [get_nets [list {index2[0]} {index2[1]} {index2[2]} {index2[3]} {index2[4]} {index2[5]} {index2[6]} {index2[7]} {index2[8]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 9 [get_debug_ports u_ila_1/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe8]
+connect_debug_port u_ila_1/probe8 [get_nets [list {index3[0]} {index3[1]} {index3[2]} {index3[3]} {index3[4]} {index3[5]} {index3[6]} {index3[7]} {index3[8]} ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe9]
+connect_debug_port u_ila_1/probe9 [get_nets [list phase_counter0 ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe10]
+connect_debug_port u_ila_1/probe10 [get_nets [list Sinewave1_CrossDwn1 ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe11]
+connect_debug_port u_ila_1/probe11 [get_nets [list Sinewave1_CrossUp ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe12]
+connect_debug_port u_ila_1/probe12 [get_nets [list Sinewave2_CrossDwn1 ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe13]
+connect_debug_port u_ila_1/probe13 [get_nets [list Sinewave2_CrossUp ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe14]
+connect_debug_port u_ila_1/probe14 [get_nets [list Sinewave3_CrossDwn1 ]]
+create_debug_port u_ila_1 probe
+set_property port_width 1 [get_debug_ports u_ila_1/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe15]
+connect_debug_port u_ila_1/probe15 [get_nets [list Sinewave3_CrossUp ]]
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROGRAM.FILE {D:/VivdoProjects/SineWave/SineWave.runs/impl_2/ThreePhase_SCRs_Controller.bit} [lindex [get_hw_devices xc7z020_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+save_constraints
+reset_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+refresh_design
+set_property mark_debug true [get_nets [list {index1[0]} {index1[1]} {index1[2]} {index1[3]} {index1[4]} {index1[5]} {index1[6]} {index1[7]} {index1[8]}]]
+set_property mark_debug true [get_nets [list {index2[0]} {index2[1]} {index2[2]} {index2[3]} {index2[4]} {index2[5]} {index2[6]} {index2[7]} {index2[8]}]]
+set_property mark_debug true [get_nets [list {index3[0]} {index3[1]} {index3[2]} {index3[3]} {index3[4]} {index3[5]} {index3[6]} {index3[7]} {index3[8]}]]
+set_property mark_debug true [get_nets [list {Sine1_out[2]} {Sine1_out[0]} {Sine1_out[1]} {Sine1_out[3]} {Sine1_out[4]} {Sine1_out[5]} {Sine1_out[6]} {Sine1_out[11]} {Sine1_out[7]} {Sine1_out[8]} {Sine1_out[9]} {Sine1_out[10]}]]
+set_property mark_debug true [get_nets [list {Sine1_out_dly[0]} {Sine1_out_dly[6]} {Sine1_out_dly[1]} {Sine1_out_dly[2]} {Sine1_out_dly[3]} {Sine1_out_dly[4]} {Sine1_out_dly[5]} {Sine1_out_dly[7]} {Sine1_out_dly[8]} {Sine1_out_dly[9]} {Sine1_out_dly[10]} {Sine1_out_dly[11]}]]
+set_property mark_debug true [get_nets [list {Sine2_out[0]} {Sine2_out[1]} {Sine2_out[2]} {Sine2_out[3]} {Sine2_out[4]} {Sine2_out[5]} {Sine2_out[6]} {Sine2_out[7]} {Sine2_out[8]} {Sine2_out[9]} {Sine2_out[10]} {Sine2_out[11]}]]
+set_property mark_debug true [get_nets [list {Sine2_out_dly[0]} {Sine2_out_dly[1]} {Sine2_out_dly[2]} {Sine2_out_dly[3]} {Sine2_out_dly[4]} {Sine2_out_dly[5]} {Sine2_out_dly[6]} {Sine2_out_dly[7]} {Sine2_out_dly[8]} {Sine2_out_dly[11]} {Sine2_out_dly[9]} {Sine2_out_dly[10]}]]
+set_property mark_debug true [get_nets [list {Sine3_out[2]} {Sine3_out[0]} {Sine3_out[1]} {Sine3_out[3]} {Sine3_out[4]} {Sine3_out[5]} {Sine3_out[6]} {Sine3_out[7]} {Sine3_out[8]} {Sine3_out[11]} {Sine3_out[9]} {Sine3_out[10]}]]
+set_property mark_debug true [get_nets [list {Sine3_out_dly[0]} {Sine3_out_dly[1]} {Sine3_out_dly[2]} {Sine3_out_dly[3]} {Sine3_out_dly[4]} {Sine3_out_dly[11]} {Sine3_out_dly[5]} {Sine3_out_dly[6]} {Sine3_out_dly[7]} {Sine3_out_dly[8]} {Sine3_out_dly[9]} {Sine3_out_dly[10]}]]
+set_property mark_debug true [get_nets [list clock_IBUF]]
+set_property mark_debug true [get_nets [list clock_IBUF_BUFG]]
+set_property mark_debug true [get_nets [list phase_counter0]]
+set_property mark_debug true [get_nets [list rset_IBUF]]
+set_property mark_debug true [get_nets [list Sinewave1_CrossDwn1]]
+set_property mark_debug true [get_nets [list Sinewave1_CrossUp]]
+set_property mark_debug true [get_nets [list Sinewave2_CrossDwn1]]
+set_property mark_debug true [get_nets [list Sinewave2_CrossUp]]
+set_property mark_debug true [get_nets [list Sinewave3_CrossDwn1]]
+set_property mark_debug true [get_nets [list Sinewave3_CrossUp]]
+set_property mark_debug false [get_nets [list clock_IBUF_BUFG]]

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TopLevel_Design_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TopLevel_Design" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="9808444366350fs"></ZoomStartTime>
+      <ZoomEndTime time="41508444366351fs"></ZoomEndTime>
+      <Cursor1Time time="25158444366000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="157"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="20" />
+   <wave_markers>
+      <marker time="525032980000000" label="" />
+      <marker time="21758444366000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/TopLevel_Design/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/phaseSelect" type="array">
+      <obj_property name="ElementShortName">phaseSelect[6:0]</obj_property>
+      <obj_property name="ObjectShortName">phaseSelect[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/Sine1_out" type="array">
+      <obj_property name="ElementShortName">Sine1_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Sine1_out[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/SquareWave1" type="logic">
+      <obj_property name="ElementShortName">SquareWave1</obj_property>
+      <obj_property name="ObjectShortName">SquareWave1</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/SW1_CrossUp_Pulse" type="logic">
+      <obj_property name="ElementShortName">SW1_CrossUp_Pulse</obj_property>
+      <obj_property name="ObjectShortName">SW1_CrossUp_Pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/SW1_CrossDwn_Pulse" type="logic">
+      <obj_property name="ElementShortName">SW1_CrossDwn_Pulse</obj_property>
+      <obj_property name="ObjectShortName">SW1_CrossDwn_Pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/Sine2_out" type="array">
+      <obj_property name="ElementShortName">Sine2_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Sine2_out[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/SquareWave2" type="logic">
+      <obj_property name="ElementShortName">SquareWave2</obj_property>
+      <obj_property name="ObjectShortName">SquareWave2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/SW2_CrossUp_Pulse" type="logic">
+      <obj_property name="ElementShortName">SW2_CrossUp_Pulse</obj_property>
+      <obj_property name="ObjectShortName">SW2_CrossUp_Pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/SW2_CrossDwn_Pulse" type="logic">
+      <obj_property name="ElementShortName">SW2_CrossDwn_Pulse</obj_property>
+      <obj_property name="ObjectShortName">SW2_CrossDwn_Pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/Sine3_out" type="array">
+      <obj_property name="ElementShortName">Sine3_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Sine3_out[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/SquareWave3" type="logic">
+      <obj_property name="ElementShortName">SquareWave3</obj_property>
+      <obj_property name="ObjectShortName">SquareWave3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/SW3_CrossUp_Pulse" type="logic">
+      <obj_property name="ElementShortName">SW3_CrossUp_Pulse</obj_property>
+      <obj_property name="ObjectShortName">SW3_CrossUp_Pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/SW3_CrossDwn_Pulse" type="logic">
+      <obj_property name="ElementShortName">SW3_CrossDwn_Pulse</obj_property>
+      <obj_property name="ObjectShortName">SW3_CrossDwn_Pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/SynchFlag" type="array">
+      <obj_property name="ElementShortName">SynchFlag[5:0]</obj_property>
+      <obj_property name="ObjectShortName">SynchFlag[5:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Thyristors" type="array">
+      <obj_property name="ElementShortName">Thyristors[5:0]</obj_property>
+      <obj_property name="ObjectShortName">Thyristors[5:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/FullCycle_Counts" type="other">
+      <obj_property name="ElementShortName">FullCycle_Counts</obj_property>
+      <obj_property name="ObjectShortName">FullCycle_Counts</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/FiringPulse_RisingEdge" type="other">
+      <obj_property name="ElementShortName">FiringPulse_RisingEdge</obj_property>
+      <obj_property name="ObjectShortName">FiringPulse_RisingEdge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TopLevel_Design/Control/FiringPulse_FallingEdge" type="other">
+      <obj_property name="ElementShortName">FiringPulse_FallingEdge</obj_property>
+      <obj_property name="ObjectShortName">FiringPulse_FallingEdge</obj_property>
+   </wvobject>
+</wave_config>

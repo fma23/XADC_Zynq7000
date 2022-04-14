@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Wed Apr 13 15:47:21 2022
+# Process ID: 59584
+# Current directory: C:/Users/fmabrouk/Documents/FPGA/XADC_Module
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent125848 C:\Users\fmabrouk\Documents\FPGA\XADC_Module\SineWave.xpr
+# Log file: C:/Users/fmabrouk/Documents/FPGA/XADC_Module/vivado.log
+# Journal file: C:/Users/fmabrouk/Documents/FPGA/XADC_Module\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fmabrouk/Documents/FPGA/XADC_Module/SineWave.xpr
+INFO: [Project 1-313] Project file moved from 'E:/FPGA/SCRs_XADC_Sqwave' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinxx/Vivado/2017.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'xadc_wiz_0' is locked:
+* IP definition 'XADC Wizard (3.3)' for IP 'xadc_wiz_0' (customized with software release 2016.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 800.086 ; gain = 57.543
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Wed Apr 13 15:48:31 2022] Launched synth_1...
+Run output will be captured here: C:/Users/fmabrouk/Documents/FPGA/XADC_Module/SineWave.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 13 15:52:18 2022...

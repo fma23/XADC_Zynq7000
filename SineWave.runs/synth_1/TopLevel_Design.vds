@@ -1,0 +1,490 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Wed Apr 13 15:48:34 2022
+# Process ID: 53992
+# Current directory: C:/Users/fmabrouk/Documents/FPGA/XADC_Module/SineWave.runs/synth_1
+# Command line: vivado.exe -log TopLevel_Design.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopLevel_Design.tcl
+# Log file: C:/Users/fmabrouk/Documents/FPGA/XADC_Module/SineWave.runs/synth_1/TopLevel_Design.vds
+# Journal file: C:/Users/fmabrouk/Documents/FPGA/XADC_Module/SineWave.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopLevel_Design.tcl -notrace
+Command: synth_design -top TopLevel_Design -part xc7z020clg484-1
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'xadc_wiz_0' is locked:
+* IP definition 'XADC Wizard (3.3)' for IP 'xadc_wiz_0' (customized with software release 2016.4) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020-clg484'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 185852 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 375.184 ; gain = 73.977
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopLevel_Design' [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/TopLevel.vhd:26]
+INFO: [Synth 8-3491] module 'ThreePhase_SCRs_Controller' declared at 'C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:7' bound to instance 'Control' of component 'ThreePhase_SCRs_Controller' [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/TopLevel.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'ThreePhase_SCRs_Controller' [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:21]
+	Parameter FullCycle_Counts bound to: 2000000 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element Sine1_out_dly_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:171]
+WARNING: [Synth 8-6014] Unused sequential element Sine2_out_dly_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:172]
+WARNING: [Synth 8-6014] Unused sequential element Sine3_out_dly_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:173]
+INFO: [Synth 8-256] done synthesizing module 'ThreePhase_SCRs_Controller' (1#1) [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:21]
+INFO: [Synth 8-3491] module 'xadc_wiz_0' declared at 'C:/Users/fmabrouk/Documents/FPGA/XADC_Module/SineWave.runs/synth_1/.Xil/Vivado-53992-DVANOFFICE-071/realtime/xadc_wiz_0_stub.vhdl:5' bound to instance 'DataConverter' of component 'xadc_wiz_0' [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/TopLevel.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/SineWave.runs/synth_1/.Xil/Vivado-53992-DVANOFFICE-071/realtime/xadc_wiz_0_stub.vhdl:30]
+WARNING: [Synth 8-6014] Unused sequential element XADC1_DataOut_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/TopLevel.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element XADC2_DataOut_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/TopLevel.vhd:221]
+WARNING: [Synth 8-6014] Unused sequential element XADC3_DataOut_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/TopLevel.vhd:223]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/TopLevel.vhd:204]
+WARNING: [Synth 8-3848] Net EOC_Pulse in module/entity TopLevel_Design does not have driver. [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/TopLevel.vhd:19]
+WARNING: [Synth 8-3848] Net XADC_DataIn in module/entity TopLevel_Design does not have driver. [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/TopLevel.vhd:31]
+WARNING: [Synth 8-3848] Net dwe_input in module/entity TopLevel_Design does not have driver. [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/TopLevel.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'TopLevel_Design' (2#1) [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/TopLevel.vhd:26]
+WARNING: [Synth 8-3331] design TopLevel_Design has unconnected port EOC_Pulse
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 415.262 ; gain = 114.055
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 415.262 ; gain = 114.055
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/SineWave.runs/synth_1/.Xil/Vivado-53992-DVANOFFICE-071/dcp3/xadc_wiz_0_in_context.xdc] for cell 'DataConverter'
+Finished Parsing XDC File [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/SineWave.runs/synth_1/.Xil/Vivado-53992-DVANOFFICE-071/dcp3/xadc_wiz_0_in_context.xdc] for cell 'DataConverter'
+Parsing XDC File [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/ConstraintsFile.xdc]
+CRITICAL WARNING: [Designutils 20-1307] Command 'SW0' is not supported in the xdc constraint file. [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/ConstraintsFile.xdc:42]
+Finished Parsing XDC File [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/ConstraintsFile.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/ConstraintsFile.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopLevel_Design_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopLevel_Design_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 744.227 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 744.227 ; gain = 443.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 744.227 ; gain = 443.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for DataConverter. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 744.227 ; gain = 443.020
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:179]
+WARNING: [Synth 8-6014] Unused sequential element index1_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:175]
+WARNING: [Synth 8-6014] Unused sequential element index2_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:176]
+WARNING: [Synth 8-6014] Unused sequential element index3_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:177]
+WARNING: [Synth 8-6014] Unused sequential element PhaseCounter1_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:326]
+WARNING: [Synth 8-6014] Unused sequential element PhaseCounter2_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:327]
+WARNING: [Synth 8-6014] Unused sequential element PhaseCounter3_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:328]
+WARNING: [Synth 8-6014] Unused sequential element PhaseCounter4_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:329]
+WARNING: [Synth 8-6014] Unused sequential element PhaseCounter5_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:330]
+WARNING: [Synth 8-6014] Unused sequential element PhaseCounter6_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:331]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:443]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 744.227 ; gain = 443.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 6     
++---XORs : 
+	   2 Input      5 Bit         XORs := 1     
++---Registers : 
+	               21 Bit    Registers := 2     
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+	   7 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   7 Input     20 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 6     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TopLevel_Design 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      5 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ThreePhase_SCRs_Controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     27 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 6     
++---Registers : 
+	               21 Bit    Registers := 2     
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 1     
+	   7 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   7 Input     20 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 6     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5587] ROM size for "Control/" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "Control/" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-6014] Unused sequential element Control/PhaseCounter1_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:326]
+WARNING: [Synth 8-6014] Unused sequential element Control/PhaseCounter2_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:327]
+WARNING: [Synth 8-6014] Unused sequential element Control/PhaseCounter3_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:328]
+WARNING: [Synth 8-6014] Unused sequential element Control/PhaseCounter4_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:329]
+WARNING: [Synth 8-6014] Unused sequential element Control/PhaseCounter5_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:330]
+WARNING: [Synth 8-6014] Unused sequential element Control/PhaseCounter6_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:331]
+WARNING: [Synth 8-6014] Unused sequential element Control/count_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:443]
+WARNING: [Synth 8-6014] Unused sequential element Control/counter_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:179]
+WARNING: [Synth 8-6014] Unused sequential element Control/index1_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:175]
+WARNING: [Synth 8-6014] Unused sequential element Control/index3_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:177]
+WARNING: [Synth 8-6014] Unused sequential element Control/index2_reg was removed.  [C:/Users/fmabrouk/Documents/FPGA/XADC_Module/Sinewaves.vhd:176]
+WARNING: [Synth 8-3331] design TopLevel_Design has unconnected port EOC_Pulse
+INFO: [Synth 8-3886] merging instance 'i_96' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_74' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_75' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_76' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_77' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_78' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_79' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_80' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_81' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_82' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_83' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_84' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_51' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_52' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_53' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_54' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_55' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_56' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_57' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_58' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_59' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_60' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_61' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_27' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_28' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_29' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_30' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_31' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_32' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_33' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_34' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_35' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_36' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_37' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'i_50' (FDCE) to 'i_95'
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_RisingEdge_reg[1]' (FDC) to 'Control/FiringPulse_RisingEdge_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_FallingEdge_reg[0]' (FDC) to 'Control/FiringPulse_FallingEdge_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_RisingEdge_reg[3]' (FDC) to 'Control/FiringPulse_RisingEdge_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_RisingEdge_reg[4]' (FDC) to 'Control/FiringPulse_RisingEdge_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_RisingEdge_reg[5]' (FDC) to 'Control/FiringPulse_RisingEdge_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_RisingEdge_reg[6]' (FDC) to 'Control/FiringPulse_RisingEdge_reg[20]'
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_RisingEdge_reg[7]' (FDC) to 'Control/FiringPulse_RisingEdge_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Control/FiringPulse_RisingEdge_reg[20] )
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_FallingEdge_reg[4]' (FDC) to 'Control/FiringPulse_FallingEdge_reg[12]'
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_FallingEdge_reg[5]' (FDC) to 'Control/FiringPulse_FallingEdge_reg[13]'
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_FallingEdge_reg[10]' (FDC) to 'Control/FiringPulse_FallingEdge_reg[15]'
+INFO: [Synth 8-3886] merging instance 'daddr_input_reg__0i_15' (FDCE) to 'daddr_input_reg__0i_9'
+INFO: [Synth 8-3886] merging instance 'daddr_input_reg__0i_14' (FDCE) to 'daddr_input_reg__0i_9'
+INFO: [Synth 8-3886] merging instance 'daddr_input_reg__0i_13' (FDCE) to 'daddr_input_reg__0i_9'
+INFO: [Synth 8-3886] merging instance 'daddr_input_reg__0i_12' (FDCE) to 'daddr_input_reg__0i_9'
+INFO: [Synth 8-3886] merging instance 'daddr_input_reg__0i_11' (FDCE) to 'daddr_input_reg__0i_9'
+INFO: [Synth 8-3886] merging instance 'daddr_input_reg__0i_10' (FDCE) to 'daddr_input_reg__0i_9'
+INFO: [Synth 8-3886] merging instance 'daddr_input_retimed_reg[5]' (FDE) to 'daddr_input_retimed_reg[6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\daddr_input_retimed_reg[6] )
+WARNING: [Synth 8-3332] Sequential element (Control/Sine1_out_retimed_reg[10]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine1_out_retimed_reg[9]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine1_out_retimed_reg[8]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine1_out_retimed_reg[7]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine1_out_retimed_reg[6]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine1_out_retimed_reg[5]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine1_out_retimed_reg[4]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine1_out_retimed_reg[3]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine1_out_retimed_reg[2]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine1_out_retimed_reg[1]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine1_out_retimed_reg[0]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine3_out_retimed_reg[10]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine3_out_retimed_reg[9]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine3_out_retimed_reg[8]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine3_out_retimed_reg[7]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine3_out_retimed_reg[6]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine3_out_retimed_reg[5]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine3_out_retimed_reg[4]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine3_out_retimed_reg[3]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine3_out_retimed_reg[2]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine3_out_retimed_reg[1]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine3_out_retimed_reg[0]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine2_out_retimed_reg[10]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine2_out_retimed_reg[9]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine2_out_retimed_reg[8]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine2_out_retimed_reg[7]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine2_out_retimed_reg[6]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine2_out_retimed_reg[5]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine2_out_retimed_reg[4]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine2_out_retimed_reg[3]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine2_out_retimed_reg[2]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine2_out_retimed_reg[1]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/Sine2_out_retimed_reg[0]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (daddr_input_retimed_reg[6]) is unused and will be removed from module TopLevel_Design.
+WARNING: [Synth 8-3332] Sequential element (Control/FiringPulse_RisingEdge_reg[20]) is unused and will be removed from module TopLevel_Design.
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_RisingEdge_reg[2]' (FDC) to 'Control/FiringPulse_FallingEdge_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_FallingEdge_reg[1]' (FDC) to 'Control/FiringPulse_RisingEdge_reg[17]'
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_FallingEdge_reg[2]' (FDC) to 'Control/FiringPulse_RisingEdge_reg[11]'
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_RisingEdge_reg[8]' (FDC) to 'Control/FiringPulse_FallingEdge_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_RisingEdge_reg[14]' (FDC) to 'Control/FiringPulse_FallingEdge_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_RisingEdge_reg[16]' (FDC) to 'Control/FiringPulse_FallingEdge_reg[16]'
+INFO: [Synth 8-3886] merging instance 'Control/FiringPulse_RisingEdge_reg[9]' (FDC) to 'Control/FiringPulse_FallingEdge_reg[9]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 744.227 ; gain = 443.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------------------+--------------------------+---------------+----------------+
+|Module Name                | RTL Object               | Depth x Width | Implemented As | 
++---------------------------+--------------------------+---------------+----------------+
+|ThreePhase_SCRs_Controller | SineConstants[0]         | 512x12        | LUT            | 
+|ThreePhase_SCRs_Controller | SineConstants[0]         | 512x12        | LUT            | 
+|ThreePhase_SCRs_Controller | SineConstants[0]         | 512x12        | LUT            | 
+|TopLevel_Design            | Control/SineConstants[0] | 512x12        | LUT            | 
+|TopLevel_Design            | Control/SineConstants[0] | 512x12        | LUT            | 
+|TopLevel_Design            | Control/SineConstants[0] | 512x12        | LUT            | 
++---------------------------+--------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 744.227 ; gain = 443.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 745.867 ; gain = 444.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 749.375 ; gain = 448.168
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin di_in[15]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin di_in[14]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin di_in[13]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin di_in[12]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin di_in[11]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin di_in[10]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin di_in[9]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin di_in[8]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin di_in[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin di_in[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin di_in[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin di_in[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin di_in[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin di_in[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin di_in[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin di_in[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module DataConverter has unconnected pin dwe_in
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 749.375 ; gain = 448.168
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 749.375 ; gain = 448.168
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 749.375 ; gain = 448.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 749.375 ; gain = 448.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 749.375 ; gain = 448.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 749.375 ; gain = 448.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xadc_wiz_0    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |xadc_wiz_0_bbox |     1|
+|2     |BUFG            |     1|
+|3     |CARRY4          |    81|
+|4     |LUT1            |    70|
+|5     |LUT2            |   155|
+|6     |LUT3            |    43|
+|7     |LUT4            |    12|
+|8     |LUT5            |    28|
+|9     |LUT6            |   127|
+|10    |FDCE            |   257|
+|11    |FDPE            |    12|
+|12    |FDRE            |    31|
+|13    |IBUF            |    15|
+|14    |OBUF            |    15|
+|15    |OBUFT           |     1|
++------+----------------+------+
+
+Report Instance Areas: 
++------+----------+---------------------------+------+
+|      |Instance  |Module                     |Cells |
++------+----------+---------------------------+------+
+|1     |top       |                           |   874|
+|2     |  Control |ThreePhase_SCRs_Controller |   783|
++------+----------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 749.375 ; gain = 448.168
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 17 critical warnings and 58 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 749.375 ; gain = 119.203
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 749.375 ; gain = 448.168
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+82 Infos, 69 Warnings, 18 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 749.375 ; gain = 454.832
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fmabrouk/Documents/FPGA/XADC_Module/SineWave.runs/synth_1/TopLevel_Design.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 749.375 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 13 15:49:21 2022...
